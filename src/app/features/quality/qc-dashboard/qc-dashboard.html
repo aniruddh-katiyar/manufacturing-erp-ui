@@ -1,0 +1,112 @@
+<section class="page">
+
+  <!-- HEADER -->
+  <div class="page-header elevated">
+    <div>
+      <h1>Quality Control</h1>
+      <span class="subtitle">Inspection status and non-conformance tracking</span>
+    </div>
+    <button class="btn btn-primary">New Inspection</button>
+  </div>
+
+  <!-- KPI STRIP -->
+  <div class="kpi-strip">
+    <div class="kpi-box">
+      <span>Inspected Today</span>
+      <strong>1,420</strong>
+    </div>
+
+    <div class="kpi-box success">
+      <span>Passed</span>
+      <strong>1,375</strong>
+    </div>
+
+    <div class="kpi-box danger">
+      <span>Rejected</span>
+      <strong>45</strong>
+    </div>
+
+    <div class="kpi-box warning">
+      <span>Rejection %</span>
+      <strong>3.2%</strong>
+    </div>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <select>
+      <option>All Stages</option>
+      <option>Incoming</option>
+      <option>In-Process</option>
+      <option>Final</option>
+    </select>
+
+    <select>
+      <option>All Lines</option>
+      <option>Line A</option>
+      <option>Line B</option>
+    </select>
+
+    <input type="date" />
+    <input type="text" placeholder="Work Order / Batch No" />
+  </div>
+
+  <!-- QC TABLE -->
+  <div class="card elevated">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Batch / WO</th>
+          <th>Stage</th>
+          <th>Checked</th>
+          <th>Rejected</th>
+          <th>Status</th>
+          <th class="text-right">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong>WO-1023</strong><br />
+            <span class="muted">Batch B-23</span>
+          </td>
+          <td>In-Process</td>
+          <td>520</td>
+          <td>8</td>
+          <td><span class="badge success">Passed</span></td>
+          <td class="text-right">
+            <button class="btn-link">View Report</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <strong>WO-1024</strong><br />
+            <span class="muted">Batch B-24</span>
+          </td>
+          <td>Final</td>
+          <td>310</td>
+          <td>12</td>
+          <td><span class="badge danger">Failed</span></td>
+          <td class="text-right">
+            <button class="btn-link">NCR</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- NCR SUMMARY -->
+  <div class="card elevated">
+    <div class="card-header">Open NCRs</div>
+    <ul class="ncr-list">
+      <li class="danger">
+        Surface defect – Line B (WO-1024)
+      </li>
+      <li class="warning">
+        Dimensional variation – Incoming material
+      </li>
+    </ul>
+  </div>
+
+</section>

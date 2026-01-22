@@ -1,0 +1,138 @@
+<section class="page">
+
+  <!-- HEADER -->
+  <div class="page-header elevated">
+    <div>
+      <h1>Orders</h1>
+      <span class="subtitle">Customer orders and fulfillment status</span>
+    </div>
+    <div class="actions">
+      <button class="btn">Export</button>
+      <button class="btn btn-primary">+ Create Order</button>
+    </div>
+  </div>
+
+  <!-- KPI STRIP -->
+  <div class="kpi-strip">
+    <div class="kpi-box">
+      <span>Total Orders</span>
+      <strong>128</strong>
+    </div>
+    <div class="kpi-box success">
+      <span>Completed</span>
+      <strong>94</strong>
+    </div>
+    <div class="kpi-box warning">
+      <span>In Progress</span>
+      <strong>26</strong>
+    </div>
+    <div class="kpi-box danger">
+      <span>Delayed</span>
+      <strong>8</strong>
+    </div>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <input type="text" placeholder="Order No / Customer / Product" />
+
+    <select>
+      <option>Status: All</option>
+      <option>Confirmed</option>
+      <option>In Production</option>
+      <option>Ready to Dispatch</option>
+      <option>Completed</option>
+      <option>Delayed</option>
+    </select>
+
+    <select>
+      <option>Customer Type</option>
+      <option>Domestic</option>
+      <option>Export</option>
+    </select>
+
+    <input type="date" />
+  </div>
+
+  <!-- ORDERS TABLE -->
+  <div class="card elevated">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Order</th>
+          <th>Customer</th>
+          <th>Order Date</th>
+          <th>Order Qty</th>
+          <th>Delivered</th>
+          <th>Delivery Date</th>
+          <th>Status</th>
+          <th class="text-right">Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>
+            <strong>SO-2045</strong><br />
+            <span class="muted">PO-7789</span>
+          </td>
+          <td>Tata Motors</td>
+          <td>12 Jan 2026</td>
+          <td>1,000</td>
+          <td>1,000</td>
+          <td>20 Jan 2026</td>
+          <td><span class="badge success">Completed</span></td>
+          <td class="text-right">
+            <button class="btn-link">View</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <strong>SO-2048</strong><br />
+            <span class="muted">PO-7812</span>
+          </td>
+          <td>Mahindra &amp; Mahindra</td>
+          <td>15 Jan 2026</td>
+          <td>800</td>
+          <td>520</td>
+          <td>28 Jan 2026</td>
+          <td><span class="badge warning">In Progress</span></td>
+          <td class="text-right">
+            <button class="btn-link">Track</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <strong>SO-2051</strong><br />
+            <span class="muted">PO-7840</span>
+          </td>
+          <td>Ashok Leyland</td>
+          <td>18 Jan 2026</td>
+          <td>600</td>
+          <td>240</td>
+          <td>25 Jan 2026</td>
+          <td><span class="badge danger">Delayed</span></td>
+          <td class="text-right">
+            <button class="btn-link danger">Escalate</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ORDER ALERTS -->
+  <div class="card elevated">
+    <div class="card-header">Order Alerts</div>
+    <ul class="alert-list">
+      <li class="danger">
+        SO-2051 – Delivery delay risk (production lag)
+      </li>
+      <li class="warning">
+        SO-2048 – Partial dispatch pending
+      </li>
+    </ul>
+  </div>
+
+</section>

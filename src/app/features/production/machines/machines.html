@@ -1,0 +1,132 @@
+<section class="page">
+
+  <!-- HEADER -->
+  <div class="page-header elevated">
+    <div>
+      <h1>Machines</h1>
+      <span class="subtitle">Machine status, utilization, and downtime</span>
+    </div>
+    <div class="actions">
+      <button class="btn">Maintenance Log</button>
+      <button class="btn btn-primary">+ Add Machine</button>
+    </div>
+  </div>
+
+  <!-- KPI STRIP -->
+  <div class="kpi-strip">
+    <div class="kpi-box success">
+      <span>Running</span>
+      <strong>18</strong>
+    </div>
+    <div class="kpi-box warning">
+      <span>Idle</span>
+      <strong>5</strong>
+    </div>
+    <div class="kpi-box danger">
+      <span>Breakdown</span>
+      <strong>2</strong>
+    </div>
+    <div class="kpi-box">
+      <span>Avg OEE</span>
+      <strong>72%</strong>
+    </div>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <select>
+      <option>All Lines</option>
+      <option>Line A</option>
+      <option>Line B</option>
+      <option>Line C</option>
+    </select>
+
+    <select>
+      <option>Status: All</option>
+      <option>Running</option>
+      <option>Idle</option>
+      <option>Breakdown</option>
+      <option>Maintenance</option>
+    </select>
+
+    <input type="text" placeholder="Search machine / code" />
+  </div>
+
+  <!-- MACHINE TABLE -->
+  <div class="card elevated">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Machine</th>
+          <th>Line</th>
+          <th>Current WO</th>
+          <th>Status</th>
+          <th>OEE</th>
+          <th>Last Downtime</th>
+          <th class="text-right">Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>
+            <strong>Lathe-01</strong><br />
+            <span class="muted">MC-001</span>
+          </td>
+          <td>Line A</td>
+          <td>WO-1024</td>
+          <td><span class="badge success">Running</span></td>
+          <td>78%</td>
+          <td>—</td>
+          <td class="text-right">
+            <button class="btn-link">Live</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <strong>Milling-03</strong><br />
+            <span class="muted">MC-014</span>
+          </td>
+          <td>Line B</td>
+          <td>WO-1025</td>
+          <td><span class="badge warning">Idle</span></td>
+          <td>64%</td>
+          <td>2h ago</td>
+          <td class="text-right">
+            <button class="btn-link">Details</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <strong>CNC-07</strong><br />
+            <span class="muted">MC-021</span>
+          </td>
+          <td>Line C</td>
+          <td>—</td>
+          <td><span class="badge danger">Breakdown</span></td>
+          <td>41%</td>
+          <td>45 min ago</td>
+          <td class="text-right">
+            <button class="btn-link danger">Fix</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- DOWNTIME SUMMARY -->
+  <div class="card elevated">
+    <div class="card-header">Recent Downtime Events</div>
+    <ul class="downtime-list">
+      <li class="danger">
+        CNC-07 – Spindle failure (45 min)
+      </li>
+      <li class="warning">
+        Milling-03 – Tool change delay (2h)
+      </li>
+    </ul>
+  </div>
+
+</section>

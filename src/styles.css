@@ -1,1 +1,212 @@
-/* You can add global styles to this file, and also import other style files */
+/* =========================================================
+   MANUFACTURING ERP – RESPONSIVE ENTERPRISE BASE
+   Works on: Desktop, Laptop, Tablet, Mobile, TV
+   ========================================================= */
+
+/* ---------- RESET ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  background-color: #f4f6f9;
+  color: #1f2937;
+}
+
+/* ---------- ROOT VARIABLES ---------- */
+:root {
+  --brand-primary: #1f3a8a;
+  --brand-secondary: #0f766e;
+
+  --bg-app: #f4f6f9;
+  --bg-card: #ffffff;
+  --bg-sidebar: #0f172a;
+
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --text-inverse: #ffffff;
+
+  --border-light: #e5e7eb;
+
+  --success: #16a34a;
+  --warning: #d97706;
+  --danger: #dc2626;
+
+  --sidebar-width: 260px;
+}
+
+/* ---------- APP LAYOUT ---------- */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+/* ---------- SIDEBAR ---------- */
+nav {
+  width: var(--sidebar-width);
+  background-color: var(--bg-sidebar);
+  color: var(--text-inverse);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+nav h4 {
+  font-size: 11px;
+  margin: 16px 0 8px;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+nav a {
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+nav a.active {
+  background-color: var(--brand-primary);
+  font-weight: 600;
+}
+
+/* ---------- CARDS ---------- */
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+/* ---------- TABLES ---------- */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 720px; /* mobile safe */
+  border-collapse: collapse;
+  background-color: var(--bg-card);
+}
+
+th,
+td {
+  padding: 8px;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 13px;
+}
+
+/* ---------- FORMS ---------- */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+input,
+select,
+textarea {
+  padding: 6px 8px;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  color: #fff;
+}
+
+/* ---------- RESPONSIVE BREAKPOINTS ---------- */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+
+  .layout {
+    flex-direction: column;
+  }
+
+  nav {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  nav h4 {
+    display: none;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .content {
+    padding: 12px;
+  }
+}
+
+/* Large Screens / TV */
+@media (min-width: 1600px) {
+  html {
+    font-size: 15px;
+  }
+
+  .content {
+    padding: 24px;
+  }
+}
+
+/* ---------- PRINT ---------- */
+@media print {
+  nav {
+    display: none;
+  }
+
+  .content {
+    padding: 0;
+  }
+}

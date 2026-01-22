@@ -1,0 +1,71 @@
+<section class="page">
+
+  <!-- HEADER -->
+  <div class="page-header elevated">
+    <div>
+      <h1>Employees</h1>
+      <span class="subtitle">Manage workforce and assignments</span>
+    </div>
+    <button class="btn btn-primary">+ Add Employee</button>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <select>
+      <option>All Departments</option>
+      <option>Production</option>
+      <option>Quality</option>
+    </select>
+
+    <select>
+      <option>Status: All</option>
+      <option>Active</option>
+      <option>Inactive</option>
+    </select>
+
+    <input type="text" placeholder="Search employee..." />
+  </div>
+
+  <!-- TABLE -->
+  <div class="card elevated">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Employee</th>
+          <th>Department</th>
+          <th>Role</th>
+          <th>Status</th>
+          <th class="text-right">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <strong>Anil Kumar</strong><br />
+            <span class="muted">EMP-001</span>
+          </td>
+          <td>Production</td>
+          <td>Machine Operator</td>
+          <td><span class="badge success">Active</span></td>
+          <td class="text-right">
+            <button class="btn-link">View</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <strong>Rohit Sharma</strong><br />
+            <span class="muted">EMP-014</span>
+          </td>
+          <td>Quality</td>
+          <td>QC Inspector</td>
+          <td><span class="badge danger">Inactive</span></td>
+          <td class="text-right">
+            <button class="btn-link">View</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</section>

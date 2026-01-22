@@ -1,0 +1,122 @@
+<section class="page">
+
+  <!-- HEADER -->
+  <div class="page-header elevated">
+    <div>
+      <h1>Work Orders</h1>
+      <span class="subtitle">Plan, execute, and track production orders</span>
+    </div>
+    <div class="actions">
+      <button class="btn">Import</button>
+      <button class="btn btn-primary">+ Create Work Order</button>
+    </div>
+  </div>
+
+  <!-- KPI STRIP -->
+  <div class="kpi-strip">
+    <div class="kpi-box">
+      <span>Total WO</span>
+      <strong>46</strong>
+    </div>
+    <div class="kpi-box success">
+      <span>Completed</span>
+      <strong>28</strong>
+    </div>
+    <div class="kpi-box warning">
+      <span>In Progress</span>
+      <strong>14</strong>
+    </div>
+    <div class="kpi-box danger">
+      <span>Delayed</span>
+      <strong>4</strong>
+    </div>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <input type="text" placeholder="Work Order / Product / Batch" />
+
+    <select>
+      <option>Status: All</option>
+      <option>Planned</option>
+      <option>Released</option>
+      <option>In Progress</option>
+      <option>Completed</option>
+      <option>Delayed</option>
+    </select>
+
+    <select>
+      <option>Production Line</option>
+      <option>Line A</option>
+      <option>Line B</option>
+    </select>
+
+    <input type="date" />
+  </div>
+
+  <!-- WORK ORDER TABLE -->
+  <div class="card elevated">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Work Order</th>
+          <th>Product</th>
+          <th>Planned Qty</th>
+          <th>Produced</th>
+          <th>Line</th>
+          <th>Status</th>
+          <th class="text-right">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td>
+            <strong>WO-1023</strong><br />
+            <span class="muted">Batch B-23</span>
+          </td>
+          <td>Gear Housing</td>
+          <td>500</td>
+          <td>520</td>
+          <td>Line A</td>
+          <td><span class="badge success">Completed</span></td>
+          <td class="text-right">
+            <button class="btn-link">View</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <strong>WO-1024</strong><br />
+            <span class="muted">Batch B-24</span>
+          </td>
+          <td>Shaft Assembly</td>
+          <td>400</td>
+          <td>310</td>
+          <td>Line B</td>
+          <td><span class="badge warning">In Progress</span></td>
+          <td class="text-right">
+            <button class="btn-link">Track</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <strong>WO-1025</strong><br />
+            <span class="muted">Batch B-25</span>
+          </td>
+          <td>Valve Body</td>
+          <td>600</td>
+          <td>420</td>
+          <td>Line C</td>
+          <td><span class="badge danger">Delayed</span></td>
+          <td class="text-right">
+            <button class="btn-link danger">Investigate</button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+</section>

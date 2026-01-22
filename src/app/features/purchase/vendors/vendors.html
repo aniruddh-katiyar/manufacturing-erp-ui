@@ -1,0 +1,128 @@
+<section class="page">
+
+  <!-- HEADER -->
+  <div class="page-header elevated">
+    <div>
+      <h1>Vendors</h1>
+      <span class="subtitle">Approved suppliers and procurement partners</span>
+    </div>
+    <div class="actions">
+      <button class="btn">Import</button>
+      <button class="btn btn-primary">+ Add Vendor</button>
+    </div>
+  </div>
+
+  <!-- KPI STRIP -->
+  <div class="kpi-strip">
+    <div class="kpi-box">
+      <span>Total Vendors</span>
+      <strong>62</strong>
+    </div>
+    <div class="kpi-box success">
+      <span>Active</span>
+      <strong>54</strong>
+    </div>
+    <div class="kpi-box warning">
+      <span>On Hold</span>
+      <strong>6</strong>
+    </div>
+    <div class="kpi-box danger">
+      <span>Blacklisted</span>
+      <strong>2</strong>
+    </div>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <select>
+      <option>All Categories</option>
+      <option>Raw Material</option>
+      <option>Packaging</option>
+      <option>Maintenance</option>
+      <option>Logistics</option>
+    </select>
+
+    <select>
+      <option>Status: All</option>
+      <option>Active</option>
+      <option>On Hold</option>
+      <option>Blacklisted</option>
+    </select>
+
+    <input type="text" placeholder="Search vendor / code" />
+  </div>
+
+  <!-- VENDOR TABLE -->
+  <div class="card elevated">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Vendor</th>
+          <th>Category</th>
+          <th>Rating</th>
+          <th>Lead Time</th>
+          <th>Status</th>
+          <th class="text-right">Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>
+            <strong>ABC Steels Pvt Ltd</strong><br />
+            <span class="muted">VND-001</span>
+          </td>
+          <td>Raw Material</td>
+          <td>★★★★☆</td>
+          <td>4 Days</td>
+          <td><span class="badge success">Active</span></td>
+          <td class="text-right">
+            <button class="btn-link">Profile</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <strong>FastPack Industries</strong><br />
+            <span class="muted">VND-014</span>
+          </td>
+          <td>Packaging</td>
+          <td>★★★☆☆</td>
+          <td>7 Days</td>
+          <td><span class="badge warning">On Hold</span></td>
+          <td class="text-right">
+            <button class="btn-link">Review</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <strong>XYZ Engineering</strong><br />
+            <span class="muted">VND-021</span>
+          </td>
+          <td>Maintenance</td>
+          <td>★☆☆☆☆</td>
+          <td>—</td>
+          <td><span class="badge danger">Blacklisted</span></td>
+          <td class="text-right">
+            <button class="btn-link danger">Details</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- VENDOR ALERTS -->
+  <div class="card elevated">
+    <div class="card-header">Vendor Alerts</div>
+    <ul class="alert-list">
+      <li class="warning">
+        FastPack Industries – Delivery delays reported
+      </li>
+      <li class="danger">
+        XYZ Engineering – Quality failure (NCR raised)
+      </li>
+    </ul>
+  </div>
+
+</section>

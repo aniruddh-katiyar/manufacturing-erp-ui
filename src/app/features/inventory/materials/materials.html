@@ -1,0 +1,137 @@
+<section class="page">
+
+  <!-- HEADER -->
+  <div class="page-header elevated">
+    <div>
+      <h1>Materials</h1>
+      <span class="subtitle">Raw, WIP, and finished material inventory</span>
+    </div>
+    <div class="actions">
+      <button class="btn">Stock Adjustment</button>
+      <button class="btn btn-primary">+ Add Material</button>
+    </div>
+  </div>
+
+  <!-- KPI STRIP -->
+  <div class="kpi-strip">
+    <div class="kpi-box">
+      <span>Total Items</span>
+      <strong>214</strong>
+    </div>
+    <div class="kpi-box success">
+      <span>In Stock</span>
+      <strong>186</strong>
+    </div>
+    <div class="kpi-box warning">
+      <span>Low Stock</span>
+      <strong>18</strong>
+    </div>
+    <div class="kpi-box danger">
+      <span>Out of Stock</span>
+      <strong>10</strong>
+    </div>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <select>
+      <option>All Categories</option>
+      <option>Raw Material</option>
+      <option>WIP</option>
+      <option>Finished Goods</option>
+    </select>
+
+    <select>
+      <option>All Stores</option>
+      <option>Main Store</option>
+      <option>Line Store</option>
+    </select>
+
+    <select>
+      <option>Status: All</option>
+      <option>In Stock</option>
+      <option>Low Stock</option>
+      <option>Out of Stock</option>
+    </select>
+
+    <input type="text" placeholder="Search material / code" />
+  </div>
+
+  <!-- MATERIAL TABLE -->
+  <div class="card elevated">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Material</th>
+          <th>Category</th>
+          <th>Available Qty</th>
+          <th>UOM</th>
+          <th>Min Level</th>
+          <th>Status</th>
+          <th class="text-right">Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>
+            <strong>Steel Rod 10mm</strong><br />
+            <span class="muted">RM-001</span>
+          </td>
+          <td>Raw Material</td>
+          <td>320</td>
+          <td>Kg</td>
+          <td>200</td>
+          <td><span class="badge success">In Stock</span></td>
+          <td class="text-right">
+            <button class="btn-link">Ledger</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <strong>Gear Housing</strong><br />
+            <span class="muted">FG-014</span>
+          </td>
+          <td>Finished Goods</td>
+          <td>48</td>
+          <td>Nos</td>
+          <td>50</td>
+          <td><span class="badge warning">Low Stock</span></td>
+          <td class="text-right">
+            <button class="btn-link">Reorder</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <strong>Packaging Box</strong><br />
+            <span class="muted">PK-009</span>
+          </td>
+          <td>Raw Material</td>
+          <td>0</td>
+          <td>Nos</td>
+          <td>500</td>
+          <td><span class="badge danger">Out of Stock</span></td>
+          <td class="text-right">
+            <button class="btn-link danger">Purchase</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- STOCK ALERTS -->
+  <div class="card elevated">
+    <div class="card-header">Critical Stock Alerts</div>
+    <ul class="alert-list">
+      <li class="danger">
+        Packaging Box – Stock exhausted
+      </li>
+      <li class="warning">
+        Gear Housing – Below minimum level
+      </li>
+    </ul>
+  </div>
+
+</section>

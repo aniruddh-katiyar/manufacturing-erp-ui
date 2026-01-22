@@ -1,0 +1,138 @@
+<section class="page">
+
+  <!-- HEADER -->
+  <div class="page-header elevated">
+    <div>
+      <h1>Dispatch</h1>
+      <span class="subtitle">Shipment planning and delivery tracking</span>
+    </div>
+    <div class="actions">
+      <button class="btn">Dispatch Report</button>
+      <button class="btn btn-primary">+ Create Dispatch</button>
+    </div>
+  </div>
+
+  <!-- KPI STRIP -->
+  <div class="kpi-strip">
+    <div class="kpi-box">
+      <span>Shipments Today</span>
+      <strong>22</strong>
+    </div>
+    <div class="kpi-box success">
+      <span>Delivered</span>
+      <strong>15</strong>
+    </div>
+    <div class="kpi-box warning">
+      <span>In Transit</span>
+      <strong>5</strong>
+    </div>
+    <div class="kpi-box danger">
+      <span>Delayed</span>
+      <strong>2</strong>
+    </div>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <input type="text" placeholder="Dispatch No / Order / Customer" />
+
+    <select>
+      <option>Status: All</option>
+      <option>Planned</option>
+      <option>Dispatched</option>
+      <option>In Transit</option>
+      <option>Delivered</option>
+      <option>Delayed</option>
+    </select>
+
+    <select>
+      <option>Transporter</option>
+      <option>ABC Logistics</option>
+      <option>FastTrack Transport</option>
+    </select>
+
+    <input type="date" />
+  </div>
+
+  <!-- DISPATCH TABLE -->
+  <div class="card elevated">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Dispatch</th>
+          <th>Order</th>
+          <th>Customer</th>
+          <th>Qty</th>
+          <th>Vehicle</th>
+          <th>Status</th>
+          <th>ETA</th>
+          <th class="text-right">Action</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>
+            <strong>DSP-3012</strong><br />
+            <span class="muted">20 Jan 2026</span>
+          </td>
+          <td>SO-2045</td>
+          <td>Tata Motors</td>
+          <td>500</td>
+          <td>UP32 AB 4567</td>
+          <td><span class="badge success">Delivered</span></td>
+          <td>—</td>
+          <td class="text-right">
+            <button class="btn-link">POD</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <strong>DSP-3015</strong><br />
+            <span class="muted">22 Jan 2026</span>
+          </td>
+          <td>SO-2048</td>
+          <td>Mahindra &amp; Mahindra</td>
+          <td>280</td>
+          <td>HR55 CD 9821</td>
+          <td><span class="badge warning">In Transit</span></td>
+          <td>23 Jan</td>
+          <td class="text-right">
+            <button class="btn-link">Track</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <strong>DSP-3018</strong><br />
+            <span class="muted">22 Jan 2026</span>
+          </td>
+          <td>SO-2051</td>
+          <td>Ashok Leyland</td>
+          <td>240</td>
+          <td>DL01 EF 7733</td>
+          <td><span class="badge danger">Delayed</span></td>
+          <td>Overdue</td>
+          <td class="text-right">
+            <button class="btn-link danger">Escalate</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- DISPATCH ALERTS -->
+  <div class="card elevated">
+    <div class="card-header">Dispatch Alerts</div>
+    <ul class="alert-list">
+      <li class="danger">
+        DSP-3018 – Vehicle breakdown reported
+      </li>
+      <li class="warning">
+        DSP-3015 – ETA may slip due to route congestion
+      </li>
+    </ul>
+  </div>
+
+</section>

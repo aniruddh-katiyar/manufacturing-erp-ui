@@ -1,0 +1,146 @@
+<!-- OWNER DASHBOARD -->
+
+<section class="dashboard">
+
+  <!-- PAGE HEADER -->
+  <div class="dashboard-header">
+    <div>
+      <h1>Owner Dashboard</h1>
+      <p class="subtitle">Real-time operational visibility</p>
+    </div>
+    <div class="header-actions">
+      <button class="btn btn-primary">Refresh</button>
+    </div>
+  </div>
+
+  <!-- KPI ROW -->
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-title">Production Today</div>
+      <div class="kpi-value">1,240</div>
+      <div class="kpi-footer success">+8% vs plan</div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-title">Attendance</div>
+      <div class="kpi-value">92%</div>
+      <div class="kpi-footer warning">12 absent</div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-title">QC Rejection</div>
+      <div class="kpi-value">3.2%</div>
+      <div class="kpi-footer danger">Above threshold</div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-title">Pending Dispatch</div>
+      <div class="kpi-value">18</div>
+      <div class="kpi-footer">Orders</div>
+    </div>
+  </div>
+
+  <!-- MAIN GRID -->
+  <div class="dashboard-grid">
+
+    <!-- PRODUCTION STATUS -->
+    <div class="card">
+      <div class="card-header">Production Status</div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Work Order</th>
+              <th>Line</th>
+              <th>Planned</th>
+              <th>Actual</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>WO-1023</td>
+              <td>Line A</td>
+              <td>500</td>
+              <td>520</td>
+              <td><span class="badge success">Completed</span></td>
+            </tr>
+            <tr>
+              <td>WO-1024</td>
+              <td>Line B</td>
+              <td>400</td>
+              <td>310</td>
+              <td><span class="badge warning">Delayed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- QUALITY OVERVIEW -->
+    <div class="card">
+      <div class="card-header">Quality Overview</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Stage</th>
+            <th>Checked</th>
+            <th>Rejected</th>
+            <th>Rejection %</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Incoming</td>
+            <td>120</td>
+            <td>4</td>
+            <td>3.3%</td>
+          </tr>
+          <tr>
+            <td>In-Process</td>
+            <td>780</td>
+            <td>18</td>
+            <td>2.3%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- INVENTORY ALERTS -->
+    <div class="card">
+      <div class="card-header">Inventory Alerts</div>
+      <ul class="alert-list">
+        <li class="danger">Steel Rod – Below minimum stock</li>
+        <li class="warning">Packaging Boxes – 2 days left</li>
+        <li class="info">Lubricant Oil – Reorder suggested</li>
+      </ul>
+    </div>
+
+    <!-- ATTENDANCE SUMMARY -->
+    <div class="card">
+      <div class="card-header">Attendance Summary</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Department</th>
+            <th>Present</th>
+            <th>Absent</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Production</td>
+            <td>82</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>Quality</td>
+            <td>18</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
